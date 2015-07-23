@@ -1,7 +1,7 @@
 ---
 layout: default.hbs
 navTitle: About
-navOrder: 2
+navOrder: 3
 navGroups:
   - primary
 ---
