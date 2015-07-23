@@ -1,0 +1,11 @@
+ITEM
+root.navTitle: {{@root.navTitle}} 
+node.name: {{name}}
+    this.nav_path: {{nav_path}} | file.nav_path: {{file.nav_path}} | root.nav_path: {{@root.nav_path}}
+    this.path: {{path}} | file.path: {{file.path}} | root.path: {{@root.path}}
+	CHILD:
+	{{#each children}}
+		{{> testNavItem}}
+	{{/each}}
+	END-CHILD
+END-ITEM

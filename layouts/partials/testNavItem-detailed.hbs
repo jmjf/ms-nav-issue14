@@ -1,0 +1,41 @@
+{{#if file}}
+ROOT
+{{#each @root}}
+	{{@key}}: {{this}}
+{{/each}}
+END ROOT
+NODE
+{{#each this}}
+	{{@key}}: {{this}}
+{{/each}}
+	FILE
+		path: {{file.path}}
+		nav_path: {{file.nav_path}}
+		nav_children: {{file.nav_children}}
+		breadcrumb_path: {{file.breadcrumb_path}}
+	END FILE
+END NODE
+
+{{else}}
+!FILE: {{name}}
+{{#each this}}
+	{{@key}}: {{this}}
+{{/each}}
+END !FILE
+{{/if}}
+
+{{#if children}}
+CHILD:
+{{#each children}}
+	{{> testNavItem}}
+{{/each}}
+END-CHILD
+{{/if}}
+
+{{#if file.children}}
+FILE CHILDREN:
+{{#each file.children}}
+	{{> testNavItem}}
+{{/each}}
+END FILE CHILDREN
+{{/if}}

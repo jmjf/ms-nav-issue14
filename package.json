@@ -1,0 +1,35 @@
+{
+  "name": "ms-nav-issue13",
+  "version": "0.0.1",
+  "description": "Test for metalsmith-navigation issue #13",
+  "homepage": "",
+  "keywords": [
+  ],
+  "author": "Jamee Mikell",
+  "maintainers": [
+    "Jamee Mikell <jamee.mikell@gmail.com>"
+  ],
+  "contributors": [
+    "Jamee Mikell <jamee.mikell@gmail.com>"
+  ],
+  "bugs": {
+    "url": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": "0.12",
+    "npm": "2.11.2"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "handlebars": "^3.0.3",
+    "metalsmith": "^2.0.1",
+    "metalsmith-layouts": "^1.0.1",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-navigation": "^0.2.3",
+    "metalsmith-permalinks": "^0.4.0"
+  }
+}
