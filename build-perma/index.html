@@ -1,24 +1,6 @@
 NAV
 	ITEM
 	root.navTitle: Home 
-	node.name: index.html
-	    this.nav_path:  | file.nav_path: index.html | root.nav_path: index.html
-	    this.path: index.html | file.path:  | root.path: 
-	    this.type: file
-		CHILD:
-		END-CHILD
-	END-ITEM
-	ITEM
-	root.navTitle: Home 
-	node.name: about
-	    this.nav_path:  | file.nav_path: about/index.html | root.nav_path: index.html
-	    this.path: about | file.path: about | root.path: 
-	    this.type: dir
-		CHILD:
-		END-CHILD
-	END-ITEM
-	ITEM
-	root.navTitle: Home 
 	node.name: subitem
 	    this.nav_path:  | file.nav_path: subitem/index.html | root.nav_path: index.html
 	    this.path: subitem | file.path: subitem | root.path: 
@@ -33,6 +15,24 @@ NAV
 				CHILD:
 				END-CHILD
 			END-ITEM
+		END-CHILD
+	END-ITEM
+	ITEM
+	root.navTitle: Home 
+	node.name: index.html
+	    this.nav_path:  | file.nav_path: index.html | root.nav_path: index.html
+	    this.path: index.html | file.path:  | root.path: 
+	    this.type: file
+		CHILD:
+		END-CHILD
+	END-ITEM
+	ITEM
+	root.navTitle: Home 
+	node.name: about
+	    this.nav_path:  | file.nav_path: about/index.html | root.nav_path: index.html
+	    this.path: about | file.path: about | root.path: 
+	    this.type: dir
+		CHILD:
 		END-CHILD
 	END-ITEM
 END-NAV
