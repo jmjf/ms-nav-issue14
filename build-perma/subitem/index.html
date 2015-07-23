@@ -1,0 +1,38 @@
+NAV
+	ITEM
+	root.navTitle: Subitem Menu Item 
+	node.name: index.html
+	    this.nav_path:  | file.nav_path: index.html | root.nav_path: subitem/index.html
+	    this.path: index.html | file.path:  | root.path: subitem
+	    this.type: file
+		CHILD:
+		END-CHILD
+	END-ITEM
+	ITEM
+	root.navTitle: Subitem Menu Item 
+	node.name: about
+	    this.nav_path:  | file.nav_path: about/index.html | root.nav_path: subitem/index.html
+	    this.path: about | file.path: about | root.path: subitem
+	    this.type: dir
+		CHILD:
+		END-CHILD
+	END-ITEM
+	ITEM
+	root.navTitle: Subitem Menu Item 
+	node.name: subitem
+	    this.nav_path:  | file.nav_path: subitem/index.html | root.nav_path: subitem/index.html
+	    this.path: subitem | file.path: subitem | root.path: subitem
+	    this.type: dir
+		CHILD:
+			ITEM
+			root.navTitle: Subitem Menu Item 
+			node.name: test
+			    this.nav_path:  | file.nav_path: subitem/test/index.html | root.nav_path: subitem/index.html
+			    this.path: subitem/test | file.path: subitem/test | root.path: subitem
+			    this.type: dir
+				CHILD:
+				END-CHILD
+			END-ITEM
+		END-CHILD
+	END-ITEM
+END-NAV
